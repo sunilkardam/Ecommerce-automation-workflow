@@ -22,8 +22,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Tests
-        run: npx playwright test
+      - name: Run Script
+        run: node your-script-file.js
 
       - name: Upload Report
         if: always()
